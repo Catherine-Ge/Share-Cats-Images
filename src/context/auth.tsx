@@ -34,5 +34,9 @@ export const AuthProvider: FC<AuthProviderProps> = ({ children }) => {
     isLoading,
   };
 
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={value}>
+      {!isLoading && children}
+    </AuthContext.Provider>
+  );
 };

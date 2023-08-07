@@ -10,7 +10,7 @@ function App() {
     <AuthProvider>
       <Routes>
         <Route
-          path="/home"
+          path="/"
           element={
             <PrivateRoute>
               <Home />
