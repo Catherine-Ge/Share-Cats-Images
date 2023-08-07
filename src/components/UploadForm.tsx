@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import useStorage from "../hooks/useStorage";
 
 const UploadForm = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const { startUpload, progress } = useStorage();
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setSelectedFile(e.target.files[0]);
@@ -11,7 +14,7 @@ const UploadForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (selectedFile) {
-      //start upload
+      startUpload(selectedFile);
     }
     setSelectedFile(null);
   };
@@ -27,7 +30,11 @@ const UploadForm = () => {
           onChange={handleFileChange}
           className="file-input file-input-bordered w-full max-w-xs"
         />
-        <button type="submit" className="btn gap-3">
+        <button
+          type="submit"
+          className={`btn gap-3 $(progress && 'loading'}`}
+          disabled={!selectedFile}
+        >
           Upload
         </button>
       </form>
