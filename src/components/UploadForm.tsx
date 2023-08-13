@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+//import { v4 as uuidv4 } from "uuid";
 import useStorage from "../hooks/useStorage";
 
 const UploadForm = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
-  const { startUpload, progress } = useStorage();
+  const { startUpload } = useStorage();
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setSelectedFile(e.target.files[0]);
