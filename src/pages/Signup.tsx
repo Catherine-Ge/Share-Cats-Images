@@ -28,7 +28,7 @@ const Signup = () => {
           <div className="text-center">
             <h1 className="text-5xl font-bold">Share Cats</h1>
             <p className="py-6">
-              Signup to view, like and share cats pictures!
+              Signup to view and share cats pictures!
             </p>
           </div>
           <div className="card sm:w-[30rem] shadow-2xl bg-base-100">
