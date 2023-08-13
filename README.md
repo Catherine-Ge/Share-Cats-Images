@@ -1,3 +1,14 @@
+This is a website where users can share cats images and view images uploaded by others.
+
+This website is built with Typescript, React, Node.js, Firebase, Firestore, Tailwind CSS (Daisy UI) and Vite.
+
+It is deployed with Vercel: https://share-cats-images-lq1xh1c4s-catherine-ge.vercel.app/signup
+
+Here is a demo of this website.
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
