@@ -39,7 +39,7 @@ const useStorage = () => {
         // store data into firestore
         await addDoc(collection(db, "images"), {
           imageUrl: downloadURL,
-          createAt: new Date(),
+          createdAt: new Date(),
           userEmail: user?.email,
         });
       }
