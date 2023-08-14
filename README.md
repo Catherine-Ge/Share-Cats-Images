@@ -6,7 +6,8 @@ It is deployed with Vercel: https://share-cats-images-lq1xh1c4s-catherine-ge.ver
 
 Here is a demo of this website.
 
-https://github.com/Catherine-Ge/Share-Cats-Images/assets/95162919/981700fd-fa2a-4963-b59c-2e0fd57b8788
+https://github.com/Catherine-Ge/Share-Cats-Images/assets/95162919/12d2ecea-6645-4487-bd22-a91a7c24b8b9
+
 
 
 
